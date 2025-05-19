@@ -1,6 +1,5 @@
-/** @type {import('next').NextConfig} */
-import netlifyNext from "@netlify/next";
-const { withNetlify } = netlifyNext;
+// next.config.mjs
+import { withNetlify } from "@netlify/next";
 
 const nextConfig = {
     images: {
