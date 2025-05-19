@@ -1,7 +1,4 @@
-// next.config.mjs
-
-import netlifyNext from "@netlify/next";
-const { withNetlify } = netlifyNext;
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
     images: {
@@ -21,4 +18,4 @@ const nextConfig = {
     reactStrictMode: true,
 };
 
-export default withNetlify(nextConfig);
+export default nextConfig;
