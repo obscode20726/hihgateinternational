@@ -1,5 +1,6 @@
 // components/ImageUploader.tsx
 import { FC } from "react";
+import Image from "next/image";
 import { SchoolLifeEntry } from "../../../../types/schoolLife";
 
 interface ImageUploaderProps {
@@ -67,9 +68,11 @@ const ImageUploader: FC<ImageUploaderProps> = ({
         )}
         {imagePreview && (
             <div className="mt-2">
-                <img
+                <Image
                     src={imagePreview}
                     alt="Preview"
+                    width={80}
+                    height={80}
                     className="w-20 h-20 rounded-lg object-cover"
                 />
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const images = [
     "https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/65154f383b8c74d25b869305_IMG-20230721-WA0011-p-500.jpg",
@@ -35,10 +36,12 @@ export default function MultiImageCarousel() {
         <div className="relative w-full max-w-5xl mx-auto mt-10">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {visibleImages.map((src, idx) => (
-                    <img
+                    <Image
                         key={idx}
                         src={src}
                         alt={`Slide ${currentIndex}-${idx}`}
+                        width={500}
+                        height={256}
                         className="w-full h-64 object-cover rounded-md"
                     />
                 ))}

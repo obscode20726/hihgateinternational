@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/sections/Footer";
 import Navbar from "@/sections/Navbar";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -135,9 +136,11 @@ export default function ContactPage() {
                     </form>
 
                     <div className="flex justify-center items-center">
-                        <img
+                        <Image
                             src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/65e9c5cb2f6313a8668b14ff_IMG_6694-p-800.jpg"
                             alt="Girl Writing"
+                            width={800}
+                            height={600}
                             className="rounded-lg shadow-lg h-full object-cover"
                         />
                     </div>
