@@ -1,0 +1,164 @@
+@tailwind base; /* Import base styles from Tailwind CSS */
+@tailwind components; /* Import component styles from Tailwind CSS */
+@tailwind utilities; /* Import utility classes from Tailwind CSS */
+
+/* Global styles */
+*, html {
+    scroll-behavior: auto !important; /* Set scroll behavior for all elements */
+}
+
+body {
+    display: block; /* Set body display to block */
+    background-color: #03435C; /* Set background color */
+}
+
+/* Layout grid styles */
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+.f-footer-grid {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+/* Image grid alignment */
+.lynx-grid-image-right {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: 1.2fr 1fr; /* Define columns for image grid */
+    grid-row-gap: 9px; /* Row gap for image grid */
+    align-items: center; /* Center align items */
+    width: 100%; /* Full width */
+}
+
+/* Specific grid area styles */
+#w-node-_6567b22a-f375-94d0-de97-e18285efac0a-dcbe0a0b,
+#w-node-_6567b22a-f375-94d0-de97-e18285efac13-dcbe0a0b {
+    grid-area: span 1; /* Define grid area */
+}
+
+#w-node-_1a602e72-be7e-02f7-f6c3-cc9a6570f160-dcbe0a0b {
+    grid-area: span 2; /* Define grid area for specific node */
+    place-self: center end; /* Center align the node */
+}
+#w-node-_41b2c1a5-3404-9587-86ba-360871bf03ce-80af046b{
+    grid-area: span 1 / span 1 / span 1 / span 1;
+    align-self: center;
+}
+
+/* Image inset styles */
+.inset-img {
+    inset: auto auto -6% -12%; /* Positioning for inset images */
+}
+
+/* Letter spacing utility */
+.letter-spacing-1-3 {
+    letter-spacing: 1.3px; /* Set letter spacing */
+}
+
+/* Wrapper for programs section */
+.home-ourprograms-wrapper {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Define two equal columns for programs wrapper */
+    grid-row-gap: 16px; /* Row gap for programs wrapper */
+    grid-column-gap: 40px; /* Column gap for programs wrapper */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Footer grid styles */
+.f-footer-grid {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(5, 1fr); /* Define five columns for footer grid */
+    grid-row-gap: 40px; /* Row gap for footer grid */
+    grid-column-gap: 40px; /* Column gap for footer grid */
+}
+
+/* Footer title styles */
+.f-footer-title,
+.f-footer-link-2 {
+    letter-spacing: -0.01em; /* Adjust letter spacing for footer title and links */
+    font-family: Lexend, sans-serif; /* Set font family */
+}
+
+/* Footer link styles */
+.f-footer-link-2 {
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Tiny text size utility */
+.text-size-tiny {
+    font-family: Lexend, sans-serif; /* Set font family for tiny text */
+}
+
+/* Animation for auto show */
+.autoShow {
+    animation: autoShowAnimation both; /* Apply animation */
+    animation-timeline: view(70% 5%); /* Set animation timeline */
+}
+
+/* Keyframes for auto show animation */
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(200px) scale(0.3); /* Start with translation and scale */
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+        transform: translateY(0) scale(1); /* End with original position and scale */
+    }
+}
+.hero-animation {
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: float;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 991px) {
+    .lynx-grid-image-right {
+        grid-column-gap: 16px; /* Adjust column gap for smaller screens */
+        grid-row-gap: 16px; /* Adjust row gap for smaller screens */
+        grid-template: "." "Area" / 1.2fr; /* Define grid for smaller screens */
+    }
+
+    .home-ourprograms-wrapper,
+    .f-footer-grid {
+        grid-template-columns: 1fr; /* Stack columns for smaller screens */
+    }
+
+    #w-node-_1a602e72-be7e-02f7-f6c3-cc9a6570f160-dcbe0a0b {
+        order: -9999; /* Change order for responsive layout */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lynx-grid-image-right {
+        grid-row-gap: 60px; /* Adjust row gap for even smaller screens */
+        grid-template-columns: 1fr; /* Stack columns for smaller screens */
+    }
+}
+@media screen and (max-width: 991px) {
+    .f-footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 991px) {
+    #w-node-_5f9dc593-c678-707f-00d0-54798acb7c55-8acb7c52 {
+        grid-area: span 1 / span 2 / span 1 / span 2;
+    }
+}
