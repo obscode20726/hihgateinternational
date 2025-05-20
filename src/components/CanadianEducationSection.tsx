@@ -1,6 +1,6 @@
 import Image from "next/image";
 const CanadianEducationSection = () => (
-    <section className="bg-white ">
+    <section className="bg-white font-lexend">
         <div></div>
 
         <div className="px-6 max-w-7xl mx-auto bg-white py-10 text-gray-800">
@@ -43,11 +43,11 @@ const CanadianEducationSection = () => (
                         anglophone students. This dual-language system ensures
                         that learners are not only proficient in both languages
                         but also equipped with the highest thinking skills
-                        required in today’s global society. Our accreditation
-                        with Cambridge International further validates our
-                        commitment to delivering a world-class education,
-                        preparing students to excel in their future academic and
-                        professional endeavors.
+                        required in today&apos;s global society. Our
+                        accreditation with Cambridge International further
+                        validates our commitment to delivering a world-class
+                        education, preparing students to excel in their future
+                        academic and professional endeavors.
                     </p>
                 </div>
 
@@ -56,18 +56,19 @@ const CanadianEducationSection = () => (
                         Le système éducatif canadien, reconnu mondialement pour
                         ses méthodes d&apos;enseignement innovantes et son
                         environnement multiculturel, est un modèle
-                        d&apos;excellence. L’Académie Internationale High Gate
-                        adopte ce système en mettant fortement l’accent sur la
-                        pensée critique, la créativité et les compétences en
-                        résolution de problèmes, essentielles pour le 21ème
-                        siècle. Notre programme unique est construit autour du
-                        jeu et des compétences essentielles pour la vie,
-                        permettant aux étudiants de s’approprier leur éducation
-                        par des jeux engageants. En respectant les normes
-                        rigoureuses établies au Québec, nous garantissons à nos
-                        étudiants le plus haut niveau de développement cognitif,
-                        alliant excellence académique traditionnelle et
-                        pratiques éducatives modernes.
+                        d&apos;excellence. L&apos;Académie Internationale High
+                        Gate adopte ce système en mettant fortement
+                        l&apos;accent sur la pensée critique, la créativité et
+                        les compétences en résolution de problèmes, essentielles
+                        pour le 21ème siècle. Notre programme unique est
+                        construit autour du jeu et des compétences essentielles
+                        pour la vie, permettant aux étudiants de
+                        s&apos;approprier leur éducation par des jeux
+                        engageants. En respectant les normes rigoureuses
+                        établies au Québec, nous garantissons à nos étudiants le
+                        plus haut niveau de développement cognitif, alliant
+                        excellence académique traditionnelle et pratiques
+                        éducatives modernes.
                     </p>
                     <p>
                         À High Gate International Academy, nous sommes fiers de
@@ -78,11 +79,12 @@ const CanadianEducationSection = () => (
                         bilingue garantit que les apprenants ne sont pas
                         seulement compétents dans les deux langues, mais
                         également dotés des compétences intellectuelles les plus
-                        élevées requises dans la société mondiale d’aujourd’hui.
-                        Notre accréditation avec Cambridge International valide
-                        davantage notre engagement à offrir une éducation de
-                        classe mondiale, préparant les étudiants à exceller dans
-                        leurs futures carrières académiques et professionnelles.
+                        élevées requises dans la société mondiale
+                        d&apos;aujourd&apos;hui. Notre accréditation avec
+                        Cambridge International valide davantage notre
+                        engagement à offrir une éducation de classe mondiale,
+                        préparant les étudiants à exceller dans leurs futures
+                        carrières académiques et professionnelles.
                     </p>
                 </div>
             </div>
