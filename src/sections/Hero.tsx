@@ -21,7 +21,7 @@ const HERO_CONTENT = {
 export default function Hero() {
     return (
         <section>
-            <div className="flex flex-col justify-start items-center w-full max-w-[1392px] mt-80 md:mt-52 mx-auto">
+            <div className="flex flex-col justify-start items-center w-full max-w-[1392px] mt-44 md:mt-52 mx-auto">
                 <div
                     className="w-full h-full flex flex-col bg-[50%_0] xlg:bg-center justify-end md:justify-center items-center md:items-start bg-cover bg-no-repeat min-h-[400px] mb-[440px] md:mb-[85px] md:min-h-[650px] rounded-[30px] shadow-[0_60px_60px_-15px_#1f20221a] md:bg-[50%] "
                     style={HERO_STYLES}

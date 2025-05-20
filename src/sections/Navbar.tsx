@@ -127,7 +127,7 @@ export default function Navbar() {
                                         </span>
                                     </Link>
                                     <Link
-                                        href="/admission/calendar"
+                                        href="/calendar"
                                         className={`flex cursor-pointer text-[14px] items-center py-1 px-8 border border-solid border-transparent ${
                                             isActive("/admission/calendar")
                                                 ? "text-[#dc9853]"
@@ -324,7 +324,7 @@ export default function Navbar() {
                                 </span>
                             </Link>
                             <Link
-                                href="/admission/calendar"
+                                href="/calendar"
                                 onClick={handleMenuItemClick}
                                 className={`flex cursor-pointer text-[14px] items-center py-1 px-8 border border-solid border-transparent ${
                                     isActive("/admission/calendar")
