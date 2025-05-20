@@ -12,7 +12,7 @@ const Page = () => {
                 <section className="relative w-full overflow-hidden">
                     {/* Background image with yellow-uniformed students */}
                     <div
-                        className="absolute inset-0 bg-[#f6f9ff] bg-cover bg-center mt-24 z-0"
+                        className="absolute inset-0 bg-[#f6f9ff] bg-cover bg-center z-0"
                         style={{
                             backgroundImage:
                                 "url('https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/6623ad42330fd69fddd54ffe_IMG_8468.JPG')",
@@ -23,10 +23,10 @@ const Page = () => {
                     <div className="absolute inset-0 z-10"></div>
 
                     {/* Content container */}
-                    <div className="relative z-20 container mx-auto px-4 pt-64 pb-16 md:pt-64 md:pb-40">
+                    <div className="relative z-20 container mx-auto px-4 pt-64 pb-16 md:pt-24 md:pb-16">
                         {/* Header */}
                         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
-                            School Fees Structure
+                            About Us
                         </h2>
                     </div>
                 </section>

@@ -8,7 +8,10 @@ export default function EventsPage() {
     return (
         <>
             <Navbar />
-            <NextEvents />
+            <div className="mt-40 md:mt-24">
+                <NextEvents />
+            </div>
+
             <Footer />
         </>
     );

@@ -8,23 +8,30 @@ const Page = () => {
     return (
         <>
             <Navbar />
-            <section className="bg-white ">
+            <section className="bg-white pt-32 ">
                 <div></div>
                 {/* Hero Section */}
-                <div className="relative h-[70vh] w-full">
-                    <Image
-                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/6623ad42330fd69fddd54ffe_IMG_8468.JPG"
-                        alt="About us banner"
-                        layout="fill"
-                        objectFit="cover"
-                        className="z-0"
+                <section className="relative w-full overflow-hidden">
+                    {/* Background image with yellow-uniformed students */}
+                    <div
+                        className="absolute inset-0 bg-[#f6f9ff] bg-cover bg-center z-0"
+                        style={{
+                            backgroundImage:
+                                "url('https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/6623ad42330fd69fddd54ffe_IMG_8468.JPG')",
+                        }}
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                        <h1 className="text-white text-4xl font-semibold">
-                            Our programs
-                        </h1>
+
+                    {/* Semi-transparent overlay for better text readability */}
+                    <div className="absolute inset-0 z-10"></div>
+
+                    {/* Content container */}
+                    <div className="relative z-20 container mx-auto px-4 pt-64 pb-16 md:pt-24 md:pb-16">
+                        {/* Header */}
+                        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+                            School Fees Structure
+                        </h2>
                     </div>
-                </div>
+                </section>
                 <div className="px-6 max-w-7xl mx-auto bg-white py-10 text-gray-800">
                     {/* Header */}
                     <h1 className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">

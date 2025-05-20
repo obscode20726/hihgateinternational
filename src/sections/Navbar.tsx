@@ -61,9 +61,9 @@ export default function Navbar() {
                         <Image
                             src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/652e65f801915f3f235665b7_Group%204.svg"
                             alt="logo"
-                            width={170}
+                            width={158}
                             height={96}
-                            className="h-16 lg:h-24 text-white w-[170px]"
+                            className="h-16 lg:h-24 text-white w-[158px]"
                         />
                     </a>
                     {/* Mobile Menu Button */}
@@ -89,7 +89,7 @@ export default function Navbar() {
                                 home
                             </Link>
                             <div className="relative group">
-                                <div className="capitalize relative text-[#024059] py-4 px-3 text-sm font-semibold transition-all cursor-pointer no-underline">
+                                <div className="capitalize relative text-[#024059] py-4 pr-3 text-sm font-semibold transition-all cursor-pointer no-underline">
                                     <div className="flex items-center group-hover:text-black gap-2">
                                         <Link
                                             href="/admission"
@@ -142,7 +142,7 @@ export default function Navbar() {
                             </div>
                             <Link
                                 href="/events"
-                                className={`capitalize py-4 px-5 text-sm font-semibold no-underline ${
+                                className={`capitalize py-4 pr-2 text-sm font-semibold no-underline ${
                                     isActive("/events")
                                         ? "text-[#dc9853]"
                                         : "text-[#024059] hover:text-[#dc9853]"
@@ -151,7 +151,7 @@ export default function Navbar() {
                                 Events
                             </Link>
                             <div className="relative group">
-                                <div className="capitalize relative py-4 px-5 text-sm font-semibold transition-all cursor-pointer no-underline">
+                                <div className="capitalize relative py-4 pr-2 text-sm font-semibold transition-all cursor-pointer no-underline">
                                     <div className="flex items-center group-hover:text-black text-[#024059] gap-2">
                                         <Link
                                             href=""
@@ -183,7 +183,7 @@ export default function Navbar() {
                                 </div>
                             </div>
                             <div className="relative group">
-                                <div className="capitalize relative py-4 px-5 text-sm font-semibold transition-all cursor-pointer no-underline">
+                                <div className="capitalize relative py-4 pr-2 text-sm font-semibold transition-all cursor-pointer no-underline">
                                     <div className="flex items-center group-hover:text-black text-[#024059] gap-2">
                                         <Link
                                             href=""
@@ -207,7 +207,7 @@ export default function Navbar() {
                                 </div>
                             </div>
                             <div className="relative group">
-                                <div className="capitalize relative py-4 px-5 text-sm font-semibold transition-all cursor-pointer no-underline">
+                                <div className="capitalize relative py-4 pr-2 text-sm font-semibold transition-all cursor-pointer no-underline">
                                     <div className="flex items-center group-hover:text-black text-[#024059] gap-2">
                                         <Link
                                             href=""
