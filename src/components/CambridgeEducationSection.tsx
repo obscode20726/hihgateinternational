@@ -5,7 +5,7 @@ const CambridgeEducationSection = () => (
 
         <div className="px-6 max-w-7xl mx-auto bg-white py-10 text-gray-800">
             {/* Header */}
-            <h1 className="text-3xl md:text-4xl font-bold text-[#cc7f00] mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#cc7f00] mb-6">
                 Cambridge Assessment International Education
             </h1>
 

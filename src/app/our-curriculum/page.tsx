@@ -32,7 +32,7 @@ const Page = () => {
                 </section>
 
                 {/* Tab Selector */}
-                <div className="flex flex-col items-start max-w-7xl lg:flex-row pl-6  mt-6 mb-6">
+                <div className="flex flex-col items-start max-w-7xl mx-auto lg:flex-row pl-6  mt-6 mb-6">
                     <button
                         className={`inline-block px-11 py-3 border-b border-gray-200 mt-5 mb-1 text-sm font-semibold ${
                             activeTab === "canadian"
@@ -44,7 +44,7 @@ const Page = () => {
                         Canadian Education System
                     </button>
                     <button
-                        className={`inline-block px-4 py-2 border-b border-gray-200 mt-5 mb-1 text-sm font-semibold ${
+                        className={`inline-block px-4 py-3 border-b border-gray-200 mt-5 mb-1 text-sm font-semibold ${
                             activeTab === "cambridge"
                                 ? "text-orange-500 border-b-2 border-orange-500"
                                 : "text-gray-600"
