@@ -20,8 +20,14 @@ export default function NextEvents() {
     const [events, setEvents] = useState<Event[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false, margin: "-100px" });
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true); // to prevent SSR hydration mismatch with Framer Motion
+    }, []);
 
     useEffect(() => {
         const fetchEvents = async () => {
@@ -63,25 +69,27 @@ export default function NextEvents() {
         fetchEvents();
     }, []);
 
-    const renderHeader = () => (
-        <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 40 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-center mb-12"
-        >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Our Upcoming Events
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Stay tuned for our upcoming events, featuring guest speakers,
-                workshops, sports games, and performances. Join us in promoting
-                learning, creativity, and community involvement. Check our
-                website or office for the latest information. See you there!
-            </p>
-        </motion.div>
-    );
+    const renderHeader = () =>
+        isClient && (
+            <motion.div
+                ref={ref}
+                initial={{ opacity: 0, y: 40 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="text-center mb-12"
+            >
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                    Our Upcoming Events
+                </h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Stay tuned for our upcoming events, featuring guest
+                    speakers, workshops, sports games, and performances. Join us
+                    in promoting learning, creativity, and community
+                    involvement. Check our website or office for the latest
+                    information. See you there!
+                </p>
+            </motion.div>
+        );
 
     if (loading) return <NextEventsSkeletonLoader />;
 
