@@ -5,13 +5,13 @@ const CambridgeEducationSection = () => (
 
         <div className="px-6 max-w-7xl mx-auto bg-white py-10 text-gray-800">
             {/* Header */}
-            <h1 className="text-3xl md:text-4xl font-bold text-[#cc7f00] mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#cc7f00] mb-6 font-lexend">
                 Cambridge Assessment International Education
             </h1>
 
             {/* Two-column grid */}
             <div className="grid lg:grid-cols-2 gap-10 mb-12">
-                <div className="space-y-4 text-justify">
+                <div className="space-y-4 text-justify font-lexend">
                     <p>
                         High Gate International Academy prepares students for
                         global success with a curriculum recognized worldwide,
@@ -41,7 +41,7 @@ const CambridgeEducationSection = () => (
                     </p>
                 </div>
 
-                <div className="space-y-4 text-justify">
+                <div className="space-y-4 text-justify font-lexend">
                     <p>
                         High Gate International Academy prépare les apprenants à
                         réussir à l&apos;échelle mondiale avec un programme
@@ -79,36 +79,36 @@ const CambridgeEducationSection = () => (
             </div>
 
             {/* Images in grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Left image spans 2 rows */}
-                <div className="row-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-4 items-center gap-6">
+                {/* First image */}
+                <div className="overflow-hidden aspect-[5/9] md:col-span-1">
                     <Image
-                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/653138b047debdd719b59448_IMG_1878-p-1600.jpg"
+                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/6531407dc1c74bb533c7cfcd_IMG_0911-p-1080.jpg"
                         alt="Teacher and students 1"
-                        width={500}
-                        height={600}
+                        width={350}
+                        height={450}
                         className="rounded-lg object-cover w-full h-full"
                     />
                 </div>
 
-                {/* Top-right image */}
-                <div>
+                {/* Middle (bigger) image */}
+                <div className="overflow-hidden aspect-[9/10] md:col-span-2">
                     <Image
-                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/6531391c20a2230e3208829f_IMG_1873-p-1600.jpg"
+                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/65314046e943130bf7a2e848_IMG_1771-p-1080.jpg"
                         alt="Teacher and students 2"
-                        width={500}
-                        height={280}
+                        width={700}
+                        height={700}
                         className="rounded-lg object-cover w-full h-full"
                     />
                 </div>
 
-                {/* Bottom-right image */}
-                <div>
+                {/* Third image */}
+                <div className="overflow-hidden aspect-[5/9] md:col-span-1">
                     <Image
-                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/6531393b7a4c6a31126dec3c_IMG_1803-p-1600.jpg"
+                        src="https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/65314098f8b5af1727a1dad7_IMG_0947-p-1080.jpg"
                         alt="Reading session"
-                        width={500}
-                        height={280}
+                        width={350}
+                        height={450}
                         className="rounded-lg object-cover w-full h-full"
                     />
                 </div>
