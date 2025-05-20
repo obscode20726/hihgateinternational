@@ -3,6 +3,7 @@ import { useState } from "react";
 import Footer from "@/sections/Footer";
 import Navbar from "@/sections/Navbar";
 import CanadianEducationSection from "@/components/CanadianEducationSection";
+import CambridgeEducationSection from "@/components/CambridgeEducationSection";
 
 const Page = () => {
     const [activeTab, setActiveTab] = useState<"canadian" | "cambridge">(
@@ -58,7 +59,7 @@ const Page = () => {
                 {activeTab === "canadian" ? (
                     <CanadianEducationSection />
                 ) : (
-                    <CanadianEducationSection />
+                    <CambridgeEducationSection />
                 )}
             </section>
 

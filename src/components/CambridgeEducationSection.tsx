@@ -60,20 +60,20 @@ const CambridgeEducationSection = () => (
                         bilingue.
                     </p>
                     <p>
-                        Les élèves de High Gate cultivent l'autodiscipline, la
-                        conscience environnementale, la créativité et les
+                        Les élèves de High Gate cultivent l&apos;autodiscipline,
+                        la conscience environnementale, la créativité et les
                         compétences informatiques dans nos salles de classe
                         intelligentes à la pointe de la technologie. Nous
-                        mettons l'accent sur l'authenticité des valeurs
-                        nationales, préparant les élèves à devenir des leaders
-                        responsables et informés de demain. Notre approche
-                        holistique de l'éducation garantit que les apprenants
-                        excellent non seulement sur le plan académique mais
-                        développent également des compétences essentielles pour
-                        la vie et un profond sens de la citoyenneté mondiale.
-                        High Gate International Academy se distingue comme un
-                        phare d'excellence, dédiée à former les leaders de
-                        demain.
+                        mettons l&apos;accent sur l&apos;authenticité des
+                        valeurs nationales, préparant les élèves à devenir des
+                        leaders responsables et informés de demain. Notre
+                        approche holistique de l&apos;éducation garantit que les
+                        apprenants excellent non seulement sur le plan
+                        académique mais développent également des compétences
+                        essentielles pour la vie et un profond sens de la
+                        citoyenneté mondiale. High Gate International Academy se
+                        distingue comme un phare d&apos;excellence, dédiée à
+                        former les leaders de demain.
                     </p>
                 </div>
             </div>
