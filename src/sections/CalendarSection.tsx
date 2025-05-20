@@ -5,7 +5,7 @@ import { Download } from "lucide-react";
 const CalendarSection = () => {
     const handleDownload = () => {
         window.open(
-            "https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/66793183524200367b16b229_School%20Fees%20Structure.pdf",
+            "https://cdn.prod.website-files.com/645514bf46c37985244c4dfc/66c30c9c97168df9cedeb9ae_High%20Gate%202024-2025_Calendar%20(3).pdf",
             "_blank"
         );
     };
@@ -29,7 +29,7 @@ const CalendarSection = () => {
                 <div className="relative z-20 container mx-auto px-4 pt-64 pb-16 md:pt-64 md:pb-40">
                     {/* Header */}
                     <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
-                        School Fees Structure
+                        School Calendar
                     </h2>
                 </div>
             </section>
@@ -39,20 +39,14 @@ const CalendarSection = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-7xl mx-auto bg-white   p-6 md:p-8 -mt-6 relative z-30">
                         <p className="text-gray-800 text-sm md:text-base text-center mb-6">
-                            We are delighted to provide you with the opportunity
-                            to access the High Gate International Academy school
-                            fees file directly from our website. By downloading
-                            this file, you will gain valuable insights into the
-                            comprehensive fee structure of our esteemed
-                            institution. It includes detailed information about
-                            tuition fees, boarding charges, and any additional
-                            costs related to extracurricular activities or
-                            facilities. We believe that transparency is crucial
-                            in fostering a strong partnership between the school
-                            and its community, and this document serves as a
-                            testament to our commitment. To download the High
-                            Gate International Academy school fees file, simply
-                            click on the link provided below.
+                            The school calendar for the coming school year is
+                            available for parents to download, giving them easy
+                            access to key dates and events. This digital
+                            calendar is available on the school website,
+                            allowing parents to save, print and share it for
+                            better planning and involvement in their
+                            child&apos;s education. For any assistance, parents
+                            can contact the school administration.
                         </p>
 
                         {/* Button container */}
