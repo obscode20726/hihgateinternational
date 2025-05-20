@@ -52,7 +52,10 @@ export default function WhoWeAre() {
                                             {feature.description}
                                         </p>
                                         {index === features.length - 1 && (
-                                            <Button href="#" className="mt-8">
+                                            <Button
+                                                href="/about-us"
+                                                className="mt-8"
+                                            >
                                                 Learn more
                                             </Button>
                                         )}

@@ -14,7 +14,7 @@ const HERO_CONTENT = {
         "With the Cambridge Canadian Blended Curriculum, we empower students to be successful in a globalized world through bilingual education.",
     button: {
         text: "Get Started",
-        href: "#",
+        href: "/student-enrollment-form",
     },
 };
 

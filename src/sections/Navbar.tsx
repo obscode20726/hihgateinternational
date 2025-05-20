@@ -246,7 +246,10 @@ export default function Navbar() {
                             >
                                 contact us
                             </a>
-                            <Button href="/" className="mt-0">
+                            <Button
+                                href="/student-enrollment-form"
+                                className="mt-0"
+                            >
                                 Get Started
                             </Button>
                         </div>

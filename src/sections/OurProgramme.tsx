@@ -27,7 +27,7 @@ export default function OurProgramme() {
                                 </h2>
                             </div>
                         </div>
-                        <Button href="#" className="mt-8">
+                        <Button href="/our-curriculum" className="mt-8">
                             Learn more
                         </Button>
                     </div>
