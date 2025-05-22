@@ -86,7 +86,7 @@ export default function SchoolLifePage() {
     return (
         <>
             <Navbar />
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-gray-50 mt-28">
                 <div className="container mx-auto px-4">
                     <div ref={headerRef}>
                         <h1 className="text-4xl font-bold text-start text-gray-800 mb-4">

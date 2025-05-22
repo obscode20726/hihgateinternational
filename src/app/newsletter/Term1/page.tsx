@@ -12,6 +12,7 @@ import NewsletterSection5_3 from "@/components/Y1/Term1/Section5_3";
 import NewsletterSection5_1 from "@/components/Y1/Term1/Section5_1";
 import NewsletterSection5_4 from "@/components/Y1/Term1/Section5_4";
 import NewsletterSection5_2 from "@/components/Y1/Term1/Section5_2";
+import NewsletterSection5_5 from "@/components/Y1/Term1/Section5_5";
 
 export default function Newsletter() {
     return (
@@ -30,6 +31,7 @@ export default function Newsletter() {
                     <NewsletterSection5_2 />
                     <NewsletterSection5_3 />
                     <NewsletterSection5_4 />
+                    <NewsletterSection5_5 />
                     {/* We'll add main content sections below */}
                 </LanguageProvider>
             </div>

@@ -13,6 +13,7 @@ export default function Navbar() {
     const pathname = usePathname();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+    const [hoveredYear, setHoveredYear] = useState<string | null>(null);
     const mobileMenuRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -164,22 +165,114 @@ export default function Navbar() {
                                     </div>
                                 </div>
                                 <div className="absolute left-0 top-10 w-auto flex-col gap-[10px] font-normal bg-white rounded-md py-[15px] px-[10px] shadow-md transition-all duration-700 ease-out transform -translate-y-12 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-                                    <Link
-                                        href={""}
-                                        className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    <div
+                                        className="group/year"
+                                        onMouseEnter={() =>
+                                            setHoveredYear("year2024")
+                                        }
+                                        onMouseLeave={() =>
+                                            setHoveredYear(null)
+                                        }
                                     >
-                                        <span className="whitespace-nowrap">
-                                            Year 2024 - 2025
-                                        </span>
-                                    </Link>
-                                    <Link
-                                        href={""}
-                                        className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                        <Link
+                                            href={""}
+                                            className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setHoveredYear(
+                                                    hoveredYear === "year2024"
+                                                        ? null
+                                                        : "year2024"
+                                                );
+                                            }}
+                                        >
+                                            <span className="whitespace-nowrap">
+                                                Year 2024 - 2025
+                                            </span>
+                                        </Link>
+                                        <div
+                                            className={`transition-all duration-300 ease-out ${
+                                                hoveredYear === "year2024"
+                                                    ? "max-h-[100px] opacity-100"
+                                                    : "max-h-0 opacity-0 overflow-hidden"
+                                            }`}
+                                        >
+                                            <Link
+                                                href={""}
+                                                className="flex cursor-pointer text-[#024059] text-[14px] bg-gray-100 border-gray-200 hover:bg-gray-300 items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            >
+                                                <span className="whitespace-nowrap">
+                                                    Term1
+                                                </span>
+                                            </Link>
+                                            <Link
+                                                href={""}
+                                                className="flex cursor-pointer text-[#024059] text-[14px] bg-gray-100 border-gray-200 hover:bg-gray-300 items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            >
+                                                <span className="whitespace-nowrap">
+                                                    Term2
+                                                </span>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="group/year"
+                                        onMouseEnter={() =>
+                                            setHoveredYear("year2023")
+                                        }
+                                        onMouseLeave={() =>
+                                            setHoveredYear(null)
+                                        }
                                     >
-                                        <span className="whitespace-nowrap">
-                                            Year 2023 - 2024
-                                        </span>
-                                    </Link>
+                                        <Link
+                                            href={""}
+                                            className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setHoveredYear(
+                                                    hoveredYear === "year2023"
+                                                        ? null
+                                                        : "year2023"
+                                                );
+                                            }}
+                                        >
+                                            <span className="whitespace-nowrap">
+                                                Year 2023 - 2024
+                                            </span>
+                                        </Link>
+                                        <div
+                                            className={`pl-8 transition-all duration-300 ease-out ${
+                                                hoveredYear === "year2023"
+                                                    ? "max-h-[100px] opacity-100"
+                                                    : "max-h-0 opacity-0 overflow-hidden"
+                                            }`}
+                                        >
+                                            <Link
+                                                href={""}
+                                                className="flex cursor-pointer text-[#024059] text-[14px] bg-gray-100 border-gray-200 hover:bg-gray-300 items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            >
+                                                <span className="whitespace-nowrap">
+                                                    Term1
+                                                </span>
+                                            </Link>
+                                            <Link
+                                                href={""}
+                                                className="flex cursor-pointer text-[#024059] text-[14px] bg-gray-100 border-gray-200 hover:bg-gray-300 items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            >
+                                                <span className="whitespace-nowrap">
+                                                    Term2
+                                                </span>
+                                            </Link>
+                                            <Link
+                                                href={""}
+                                                className="flex cursor-pointer text-[#024059] text-[14px] bg-gray-100 border-gray-200 hover:bg-gray-300 items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                            >
+                                                <span className="whitespace-nowrap">
+                                                    Term3
+                                                </span>
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="relative group">
@@ -375,24 +468,98 @@ export default function Navbar() {
                                     : "max-h-0 opacity-0 overflow-hidden py-0 px-0"
                             }`}
                         >
-                            <Link
-                                href=""
-                                onClick={handleMenuItemClick}
-                                className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                            <div
+                                className="group/year"
+                                onMouseEnter={() => setHoveredYear("year2024")}
+                                onMouseLeave={() => setHoveredYear(null)}
                             >
-                                <span className="whitespace-nowrap">
-                                    Year 2024 - 2025
-                                </span>
-                            </Link>
-                            <Link
-                                href=""
-                                onClick={handleMenuItemClick}
-                                className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                <Link
+                                    href={""}
+                                    className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setHoveredYear(
+                                            hoveredYear === "year2024"
+                                                ? null
+                                                : "year2024"
+                                        );
+                                    }}
+                                >
+                                    <span className="whitespace-nowrap">
+                                        Year 2024 - 2025
+                                    </span>
+                                </Link>
+                                <div
+                                    className={`pl-8 transition-all duration-300 ease-out ${
+                                        hoveredYear === "year2024"
+                                            ? "max-h-[100px] opacity-100"
+                                            : "max-h-0 opacity-0 overflow-hidden"
+                                    }`}
+                                >
+                                    <Link
+                                        href={""}
+                                        className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    >
+                                        <span className="whitespace-nowrap">
+                                            Term1
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div
+                                className="group/year"
+                                onMouseEnter={() => setHoveredYear("year2023")}
+                                onMouseLeave={() => setHoveredYear(null)}
                             >
-                                <span className="whitespace-nowrap">
-                                    Year 2023 - 2024
-                                </span>
-                            </Link>
+                                <Link
+                                    href={""}
+                                    className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setHoveredYear(
+                                            hoveredYear === "year2023"
+                                                ? null
+                                                : "year2023"
+                                        );
+                                    }}
+                                >
+                                    <span className="whitespace-nowrap">
+                                        Year 2023 - 2024
+                                    </span>
+                                </Link>
+                                <div
+                                    className={`pl-8 transition-all duration-300 ease-out ${
+                                        hoveredYear === "year2023"
+                                            ? "max-h-[100px] opacity-100"
+                                            : "max-h-0 opacity-0 overflow-hidden"
+                                    }`}
+                                >
+                                    <Link
+                                        href={""}
+                                        className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    >
+                                        <span className="whitespace-nowrap">
+                                            Term1
+                                        </span>
+                                    </Link>
+                                    <Link
+                                        href={""}
+                                        className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    >
+                                        <span className="whitespace-nowrap">
+                                            Term2
+                                        </span>
+                                    </Link>
+                                    <Link
+                                        href={""}
+                                        className="flex cursor-pointer text-[#024059] text-[14px] items-center py-1 px-8 border border-solid border-transparent hover:text-[#dc9853]"
+                                    >
+                                        <span className="whitespace-nowrap">
+                                            Term3
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
