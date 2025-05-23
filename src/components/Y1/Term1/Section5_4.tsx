@@ -7,7 +7,7 @@ const NewsletterSection5_4 = () => {
     const { language } = useLanguage();
 
     return (
-        <div className="max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-sans">
+        <div className="max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-lexend">
             {language === "en" ? (
                 <>
                     <div className="bg-gray-100 text-center px-4 py-2 mb-8 rounded">

@@ -7,7 +7,7 @@ const NewsletterSection5_3 = () => {
     const { language } = useLanguage();
 
     return (
-        <div className="max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-sans">
+        <div className="max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-lexend">
             {language === "en" ? (
                 <>
                     <div className="bg-gray-100 text-center px-4 py-2 mb-8 rounded">
@@ -21,12 +21,12 @@ const NewsletterSection5_3 = () => {
                             <p>
                                 The Curriculum Evening held at High Gate
                                 International Academy was a dedicated event
-                                designed to acquaint parents with the school’s
-                                comprehensive curriculum. The presentation
-                                covered various sections, subjects, and
-                                methodologies employed in teaching students.
-                                Emphasis was placed on the school’s philosophy
-                                of teaching and learning.
+                                designed to acquaint parents with the
+                                school&apos;s comprehensive curriculum. The
+                                presentation covered various sections, subjects,
+                                and methodologies employed in teaching students.
+                                Emphasis was placed on the school&apos;s
+                                philosophy of teaching and learning.
                             </p>
                             <p>
                                 Parents actively engaged in discussions, seeking

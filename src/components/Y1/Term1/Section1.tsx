@@ -8,7 +8,7 @@ const NewsletterPage = () => {
     const { language } = useLanguage();
 
     return (
-        <div className="min-h-screen max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-sans">
+        <div className="min-h-screen max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-lexend">
             <LanguageToggle />
 
             {language === "en" ? (
@@ -27,7 +27,7 @@ const NewsletterPage = () => {
                         />
                         <div className="bg-gray-100 text-center px-4 py-2 rounded">
                             <h3 className="text-xl font-bold text-blue-900">
-                                1. Principal’s Message
+                                1. Principal&apos;s Message
                             </h3>
                         </div>
                         <p className="mt-4">

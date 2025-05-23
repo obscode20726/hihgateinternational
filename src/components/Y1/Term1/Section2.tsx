@@ -7,12 +7,12 @@ const NewsletterSection2 = () => {
     const { language } = useLanguage();
 
     return (
-        <div className="max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-sans">
+        <div className="max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-lexend">
             {language === "en" ? (
                 <>
                     <div className="bg-gray-100 text-center px-4 py-2 mb-8 rounded">
                         <h3 className="text-xl font-bold text-blue-900">
-                            2. The Head of Academics’ Note
+                            2. The Head of Academics&apos; Note
                         </h3>
                     </div>
                     <div className="flex flex-col lg:flex-row gap-10">
