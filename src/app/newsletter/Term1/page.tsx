@@ -13,6 +13,9 @@ import NewsletterSection5_1 from "@/components/Y1/Term1/Section5_1";
 import NewsletterSection5_4 from "@/components/Y1/Term1/Section5_4";
 import NewsletterSection5_2 from "@/components/Y1/Term1/Section5_2";
 import NewsletterSection5_5 from "@/components/Y1/Term1/Section5_5";
+import NewsletterSection5_6 from "@/components/Y1/Term1/Section5_6";
+import NewsletterSection5_7 from "@/components/Y1/Term1/Section5_7";
+import NewsletterSection5_8 from "@/components/Y1/Term1/Section5_8";
 
 export default function Newsletter() {
     return (
@@ -32,7 +35,9 @@ export default function Newsletter() {
                     <NewsletterSection5_3 />
                     <NewsletterSection5_4 />
                     <NewsletterSection5_5 />
-                    {/* We'll add main content sections below */}
+                    <NewsletterSection5_6 />
+                    <NewsletterSection5_7 />
+                    <NewsletterSection5_8 />
                 </LanguageProvider>
             </div>
             <Footer />

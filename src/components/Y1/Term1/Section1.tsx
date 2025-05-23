@@ -8,14 +8,14 @@ const NewsletterPage = () => {
     const { language } = useLanguage();
 
     return (
-        <div className="min-h-screen max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-gray-800 font-lexend">
+        <div className="min-h-screen max-w-7xl mx-auto bg-white px-4 py-8 text-justify text-[#024059] font-lexend">
             <LanguageToggle />
 
             {language === "en" ? (
                 <div className="flex flex-col lg:flex-row gap-10">
                     {/* Left Column */}
                     <div className="lg:w-1/2 space-y-4">
-                        <h2 className="text-2xl font-bold mb-4 text-blue-900">
+                        <h2 className="text-2xl font-bold mb-4 text-[#01254e]">
                             Inside this issue
                         </h2>
                         <Image
@@ -25,8 +25,8 @@ const NewsletterPage = () => {
                             width={500}
                             height={300}
                         />
-                        <div className="bg-gray-100 text-center px-4 py-2 rounded">
-                            <h3 className="text-xl font-bold text-blue-900">
+                        <div className="bg-gray-50 text-center px-4 py-2 rounded">
+                            <h3 className="text-xl font-bold text-[#01254e]">
                                 1. Principal&apos;s Message
                             </h3>
                         </div>
@@ -111,7 +111,7 @@ const NewsletterPage = () => {
                     <div className="flex flex-col lg:flex-row gap-10">
                         {/* Left Column */}
                         <div className="lg:w-1/2 space-y-4">
-                            <h2 className="text-2xl font-bold mb-4 text-blue-900">
+                            <h2 className="text-2xl font-bold mb-4 text-[#01254e]">
                                 NEWSLETTER DU PREMIER TRIMESTRE
                             </h2>
                             <Image
@@ -121,8 +121,8 @@ const NewsletterPage = () => {
                                 width={500}
                                 height={300}
                             />
-                            <div className="bg-gray-100 text-center px-4 py-2 rounded">
-                                <h3 className="text-xl font-bold text-blue-900">
+                            <div className="bg-gray-50 text-center px-4 py-2 rounded">
+                                <h3 className="text-xl font-bold text-[#01254e]">
                                     1. Message du directeur
                                 </h3>
                             </div>
