@@ -111,7 +111,7 @@ export default function WhoWeAre() {
                             </motion.div>
                         </div>
                         <motion.div
-                            className=" relative w-full aspect-video mt-10 rounded-xl overflow-hidden group"
+                            className="relative w-full aspect-video mt-10 rounded-xl overflow-hidden group min-h-[200px]"
                             variants={fadeInUp}
                             initial="hidden"
                             whileInView="show"
