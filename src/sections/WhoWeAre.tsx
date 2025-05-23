@@ -3,9 +3,6 @@ import ytplaceholder from "@/assets/images/youtube-placeholder.svg";
 import Button from "../components/Button";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { PlayCircle } from "lucide-react";
-import { useState } from "react";
-
 export default function WhoWeAre() {
     const features = [
         {
@@ -24,8 +21,6 @@ export default function WhoWeAre() {
                 "We strive for excellence in education, investing in the latest technology and resources to enhance teaching and learning practices. We are dedicated to innovation and constantly seek ways to better serve our students.",
         },
     ];
-
-    const [isPlaying, setIsPlaying] = useState(false);
 
     const fadeInUp = {
         hidden: { opacity: 0, y: 100, scale: 0.8 },
@@ -110,39 +105,18 @@ export default function WhoWeAre() {
                                 />
                             </motion.div>
                         </div>
-                        <div className="relative w-full aspect-video mt-10 rounded-xl overflow-hidden group min-h-[200px]">
-                            {/* Background placeholder */}
-                            {!isPlaying && (
-                                <div
-                                    className="absolute inset-0 bg-cover bg-center z-0 transition-opacity duration-300"
-                                    style={{
-                                        backgroundImage: `url(${ytplaceholder.src})`,
-                                    }}
-                                ></div>
-                            )}
-
-                            {/* YouTube iframe */}
-                            {isPlaying && (
-                                <iframe
-                                    src="https://www.youtube.com/embed/H7ClHApHc3o?rel=0&controls=1&autoplay=1&mute=0"
-                                    title="YouTube video"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    loading="lazy"
-                                    className="absolute top-0 left-0 w-full h-full z-10"
-                                />
-                            )}
-
-                            {/* Play button */}
-                            {!isPlaying && (
-                                <button
-                                    aria-label="Play Video"
-                                    onClick={() => setIsPlaying(true)}
-                                    className="absolute z-10 inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition duration-300"
-                                >
-                                    <PlayCircle className="w-16 h-16 text-white" />
-                                </button>
-                            )}
+                        <div
+                            className="relative w-full aspect-video mt-10 rounded-xl overflow-hidden group min-h-[200px]"
+                            style={{
+                                backgroundImage: `url(${ytplaceholder.src})`,
+                                backgroundPosition: "50%",
+                            }}
+                        >
+                            <iframe
+                                src="https://www.youtube.com/embed/H7ClHApHc3o?rel=0&controls=1&autoplay=0&mute=0&start=0"
+                                frameBorder={0}
+                                className="absolute left-0 top-0 w-full h-full pointer-events-auto"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
