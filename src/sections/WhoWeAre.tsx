@@ -110,13 +110,7 @@ export default function WhoWeAre() {
                                 />
                             </motion.div>
                         </div>
-                        <motion.div
-                            className="relative w-full aspect-video mt-10 rounded-xl overflow-hidden group min-h-[200px]"
-                            variants={fadeInUp}
-                            initial="hidden"
-                            whileInView="show"
-                            viewport={{ once: false, amount: 0.3 }}
-                        >
+                        <div className="relative w-full aspect-video mt-10 rounded-xl overflow-hidden group min-h-[200px]">
                             {/* Background placeholder */}
                             {!isPlaying && (
                                 <div
@@ -149,7 +143,7 @@ export default function WhoWeAre() {
                                     <PlayCircle className="w-16 h-16 text-white" />
                                 </button>
                             )}
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>
